@@ -1,0 +1,71 @@
+/* تصميم العنصر الأساسي */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.search-input-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:92%;
+}
+
+.search-input-content-input {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #162D3A;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #fff;
+  height:35px;
+}
+
+.search-input-content-input i {
+  margin-right: 10px;
+  color: #999;
+  margin-left: 10px;
+}
+
+/* حقل الإدخال */
+.search-input-content-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #111;
+  font-weight: 600;
+  font-family: "Quicksand", serif;
+}
+
+/* زر الإعدادات */
+.search-input-content-button {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #162d3a;
+  color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* أيقونة الإعدادات */
+.search-input-content-button i {
+  font-size: 16px;
+}
+
+/* تأثير hover على زر الإعدادات */
+.search-input-content-button:hover {
+  background-color: #0d1e28;
+}

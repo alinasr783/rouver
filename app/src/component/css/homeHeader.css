@@ -1,0 +1,79 @@
+.home-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100vw;
+  height : 50px;
+  margin-top:10px;
+}
+.home-header-content{
+  display: flex;
+  align-items: center;
+  width : 90%;
+  height : 100%;
+}
+.home-header-content-greeting{
+  display: flex;
+  align-items: center;
+  width : 80%;
+  height : 100%;
+  font-family: "Quicksand", serif;
+  font-size:20px;
+  font-weight:700;
+}
+.home-header-content-notification{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width : 30%;
+  height : 100%;
+}
+.home-header-content-notification-bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width : 40px;
+  height : 40px;
+  border-radius: 50%;
+  background-color:#f4f4f4;
+}
+.home-header-content-notification-bg i {
+  font-size: 20px;
+  color: #111;
+  animation: bell 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bell {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.home-header-content-notification-number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width : 20px;
+  height : 20px;
+  border-radius: 50%;
+  background-color:#f53131;
+  color:#fff;
+  font-family: "Quicksand", serif;
+  font-size:12px;
+  font-weight:600;
+  top:10px;
+  right:12px;
+}
