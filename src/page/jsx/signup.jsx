@@ -102,9 +102,8 @@ export default function Signup() {
         <div className='signup-content-img'>
           <img src={`${img}`} alt={`${img}`} />
         </div>
-        <div className='signup-content-title'>Trendy man بتحبك ❤️ </div>
-        <div className='signup-content-des'>عامل اي يا عسل 😘
-        عشان تسجل معانا محتاجين شوية بيانات صغننة قد كدا 🤏🏻 
+        <div className='signup-content-title'>YouR Rouver</div>
+        <div className='signup-content-des'>Welcome to your ROUVER, to create an account please enter email and password 
         </div>
         <div className='signup-content-inputs'>
           <div className='signup-content-inputs-input-email'>

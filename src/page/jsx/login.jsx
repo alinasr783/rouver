@@ -69,10 +69,9 @@ export default function Login() {
         <div className="login-content-img">
           <img src={`${img}`} alt="Login" />
         </div>
-        <div className="login-content-title">🤍 اهلا يا عسل</div>
+        <div className="login-content-title">You's Rouver</div>
         <div className="login-content-des">
-          اليومين دول في حالات انتحال للشخصيات المهمة والعظيمة زيك😎  
-          عشان كدا  عايزينك تدخل بيانات حسابك عشان نتأكد ان محدش بيحاول ينتحل شخصيتك 🧐
+          please enter your email and password to login
         </div>
         <div className="login-content-inputs">
           <div className="login-content-inputs-input-email">

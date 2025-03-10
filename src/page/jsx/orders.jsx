@@ -115,10 +115,10 @@ export default function Orders() {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-content">
-            <h3>🫶 اهلا بيك معانا</h3>
-            <p>سجل حساب دوقتي و استمتع بي  أفضل العروض والخصومات قبل اي حد ❤️</p>
+            <h3>Here There</h3>
+            <p>You must have a ROUVER account to be able to open this page.</p>
             <button onClick={handleSignUp} className="signup-btn">
-               🔥 سجل دلوقتي
+               Create Account 
             </button>
           </div>
         </div>
