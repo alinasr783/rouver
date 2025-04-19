@@ -1,0 +1,19 @@
+modules = ["nodejs-20"]
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
+
+[workflows]
+
+[[workflows.workflow]]
+name = "react app"
+mode = "sequential"
+author = 41244606
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"

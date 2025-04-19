@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--mui-palette-background-default);
+  margin: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid var(--mui-palette-divider);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: var(--mui-palette-primary-main);
+  color: white;
+}
+
+.list-icon {
+  min-width: 40px;
+  color: var(--mui-palette-text-secondary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.MuiListItemButton-root:hover .list-icon {
+  transform: scale(1.1);
+}
+
+.MuiListItemButton-root.active {
+  background-color: rgba(63, 81, 181, 0.2);
+}
+
+.MuiListItemButton-root.active .list-icon,
+.MuiListItemButton-root.active .MuiListItemText-root {
+  color: var(--mui-palette-primary-main);
+}
+
+.appbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1200;
+  backdrop-filter: blur(10px);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.theme-icon {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-icon.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar-header {
+    padding: 12px;
+  }
+
+  .list-icon {
+    min-width: 32px;
+  }
+
+  .toolbar {
+    padding: 0 12px;
+  }
+}
