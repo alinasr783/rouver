@@ -1,14 +1,14 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 
-export default function User() {
+export default function Dashboard() {
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h4" gutterBottom>
         Dashboard Overview
       </Typography>
       <Typography>
-        Users. Here’s a users or your projects.
+        Welcome to your dashboard. Here’s a summary of your activity.
       </Typography>
     </Box>
   );

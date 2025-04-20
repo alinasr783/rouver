@@ -9,20 +9,26 @@ body {
   background-color: var(--mui-palette-background-default);
   margin: 0;
 }
+body[data-theme='dark'] .appbar {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+}
 
 .sidebar {
+  background-color: var(--mui-palette-background-paper);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  border-right: 1px solid var(--mui-palette-divider);
+  padding-top: 8px;
 }
 
 .sidebar-header {
   display: flex;
   align-items: center;
-  padding: 16px;
-  background: var(--mui-palette-primary-main);
-  color: white;
+  justify-content: center;
+  height: 64px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .list-icon {
@@ -36,37 +42,36 @@ body {
 }
 
 .MuiListItemButton-root.active {
-  background-color: rgba(63, 81, 181, 0.2);
+  background-color: rgba(63, 81, 181, 0.1);
+  color: var(--mui-palette-primary-main);
+  font-weight: 600;
+  transform: translateX(2px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-.MuiListItemButton-root.active .list-icon,
-.MuiListItemButton-root.active .MuiListItemText-root {
-  color: var(--mui-palette-primary-main);
+.MuiListItemButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  transition: background-color 0.3s ease;
 }
 
 .appbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1200;
   backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
-.toolbar {
+body[data-theme='dark'] .appbar {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.appbar .toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-}
-
-.theme-icon {
-  opacity: 0.6;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.theme-icon.active {
-  opacity: 1;
-  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
